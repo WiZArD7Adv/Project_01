@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 df = pd.read_csv(
-    r"C:\Users\binit\PyCharmMiscProject\Startup_App\startup_cleaned.csv"
+    r"startup_cleaned.csv"
 )
 df['date'] = pd.to_datetime(df['date'])
 st.set_page_config(layout='wide',page_title='StartUp Analysis')
@@ -216,6 +216,7 @@ elif A == "Investor":
     btn2 = st.sidebar.button("Get Investors Details")
     if btn2:
         investor_details(selected_investor)
+
 
 
 
